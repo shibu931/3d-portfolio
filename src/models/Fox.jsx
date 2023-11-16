@@ -9,7 +9,7 @@ const Fox = ({currentAnimation ,...props}) => {
   const { nodes, materials, animations } = useGLTF(scene);
   const { actions } = useAnimations(animations, group);
   useEffect(()=>{
-
+    console.log(actions)
   },[actions,currentAnimation])
   return (
     <group ref={group} {...props} dispose={null}>
